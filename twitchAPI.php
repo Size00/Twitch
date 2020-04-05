@@ -1,5 +1,5 @@
 function get_TwitchUser($username){
-$curl_h = curl_init('https://api.twitch.tv/helix/users?login=garytheproducer');
+$curl_h = curl_init('https://api.twitch.tv/helix/users?login='.$username);
 curl_setopt($curl_h, CURLOPT_HTTPHEADER,
  array('method' => "GET",
        'Accept: application/vnd.twitchtv.v5+json',
